@@ -1,0 +1,18 @@
+{
+  "name": "increa-gestion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "^2.10.3",
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.3.0"
+  }
+}
