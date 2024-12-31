@@ -1,16 +1,21 @@
+// package.json
 {
   "name": "increa-gestion",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "main.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "electron .",
+    "build": "next build && electron-builder"
   },
-  "dependencies": {
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "recharts": "^2.10.3"
+  "build": {
+    "appId": "com.increa.gestion",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^21.0.0",
+    "electron-builder": "^23.0.0"
   }
 }
